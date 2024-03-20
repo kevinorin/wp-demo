@@ -2,6 +2,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const path = require('path');
 
 module.exports = {
+  mode: 'production',
   entry: './assets/scss/global.scss',
   output: {
     // Assuming the current config file is in the theme root
@@ -25,7 +26,7 @@ module.exports = {
   plugins: [
     new MiniCssExtractPlugin({
       // This will now directly output to the theme's root
-      filename: 'global.css',
+      filename: 'style.css',
     }),
   ],
 };

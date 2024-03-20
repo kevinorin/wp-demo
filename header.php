@@ -31,8 +31,17 @@
 
         <!-- User Menu and Search (simplified version) -->
         <div class="flex items-center space-x-4 justify-end text-gray-500 cursor-pointer">
-            <a href="#" class="hidden md:inline">List your stay</a>
-            <!-- Icons can be added via SVG or an icon font library like FontAwesome -->
+          <?php
+            // Display the user navigation menu
+            wp_nav_menu(array(
+                'theme_location' => 'user_nav', // Use the 'user_nav' menu location
+                'menu_class' => 'hidden md:inline', // Add classes for styling (hides on smaller screens)
+                'container' => false, // Remove the outer container
+                'link_before' => '', // Text before each link
+                'link_after' => '', // Text after each link
+                'depth' => 1, // Limit the depth of the menu
+            ));
+          ?>
         </div>
     </header>
 

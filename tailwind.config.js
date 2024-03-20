@@ -1,12 +1,7 @@
-/** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    './**/*.php', 
-    './assets/js/**/*.js', 
+    "./**/*.php", 
+    "./assets/js/**/*.js",
+    "./assets/scss/**/*.scss", // Include if you want Tailwind to scan your SCSS files
   ],
-  theme: {
-    extend: {},
-  },
-  plugins: [],
-}
-
+};

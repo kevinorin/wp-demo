@@ -11,6 +11,11 @@
   function wptailwind_classic_setup() {
     register_nav_menus(array(
         'primary' => __('Primary Menu', 'wptailwind-classic'),
+        'user_nav' => __('User Nav', 'wptailwind-classic'),
+        'footer_1' => __('Footer 1', 'wptailwind-classic'),
+        'footer_2' => __('Footer 2', 'wptailwind-classic'),
+        'footer_3' => __('Footer 3', 'wptailwind-classic'),
+        'footer_4' => __('Footer 4', 'wptailwind-classic'),
     ));
   }
   add_action('after_setup_theme', 'wptailwind_classic_setup');

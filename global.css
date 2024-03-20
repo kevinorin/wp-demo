@@ -1,6 +1,0 @@
-/*!
-Theme Name: WPDemo
-Author: Kevin Williams
-Description: A custom WordPress theme with TailwindCSS.
-Version: 1.0.0
-*/.search-form{transition:all .5s ease;opacity:0;visibility:hidden}.search-form.show-search{opacity:1;visibility:visible}
