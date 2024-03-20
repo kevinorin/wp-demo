@@ -4,15 +4,12 @@ Author: Kevin Williams
 Description: A custom WordPress theme with TailwindCSS.
 Version: 1.0.0
 */
-
-// Header Custom
 .search-form {
   transition: all 0.5s ease;
   opacity: 0;
   visibility: hidden;
-
-  &.show-search {
-    opacity: 1;
-    visibility: visible;
-  }
 }
+.search-form.show-search {
+  opacity: 1;
+  visibility: visible;
+}/*# sourceMappingURL=global.css.map */

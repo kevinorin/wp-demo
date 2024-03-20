@@ -25,7 +25,7 @@ module.exports = {
   plugins: [
     new MiniCssExtractPlugin({
       // This will now directly output to the theme's root
-      filename: 'style.css',
+      filename: 'global.css',
     }),
   ],
 };
